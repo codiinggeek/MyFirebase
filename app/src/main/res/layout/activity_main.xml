@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:id="@+id/eAge"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:id="@+id/eName"
+        android:layout_below="@+id/eAge"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_below="@+id/eName"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:id="@+id/txtOutputAge"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_below="@+id/txtOutputAge"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:id="@+id/txtOutputName"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin = "10dp"
+        android:text="Run Code"
+        android:id="@+id/btnRunCode"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin = "10dp"
+        android:text="Read Data"
+        android:id="@+id/btnReadData"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnRunCode"
+        android:layout_below="@id/txtOutputName"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:padding="6dp"
+        android:id="@+id/mRecyclerView"/>
+
+</RelativeLayout>
